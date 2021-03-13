@@ -72,10 +72,16 @@
   height: 11rem;
   text-align: center;
   &__email {
+    @include mobile-cta;
     @include field-sm;
+    &::placeholder {
+      padding-left: 3.2rem;
+    }
   }
   &__btn {
+    @include mobile-cta;
     @include btn-sm;
     margin-top: 1.6rem;
+    font-weight: 700;
   }
 }

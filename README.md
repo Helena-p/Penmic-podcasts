@@ -10,7 +10,7 @@ The landing page shall clearly state the service that Penmic offers its clients,
 The short informative paragraph, beneath the header, further state the simplicity in the company's services that "...by one click" to gain full access and reach a world of listeners. This is further demonstrated by the single email registration button with it's stark contrasting color.<br>
 To gain confidence and reliablility in Penmic's services, a sample of the collaborating podcast distributers is stated beneath the 'gain access' button.
 
-#### Persona Gail Wingers
+#### _Persona Gail Wingers_
 
 I am a small business owner and run a florist shop in a middle size town. I want to expand my business and reach the younger public that soon will be house owners with their own garden. By publishing a podcast on how to take care of a garden, plants and grow vegetables my florist shop will maybe be their first choice for supplies.<br>
 As a small business owner my time is precious and I am looking for an easy solution to fast and easily get started with a podcast. I want reassurance that my money is well spent and that I can reach as many listeners as possible for little effort.
@@ -40,6 +40,10 @@ As a small business owner my time is precious and I am looking for an easy solut
 ### Design
 
 The design is based on a design specification for the Frontend Mentor challenge. The objective is to be as accurate as possible in layout and design.
+
+#### _Mobile_
+
+On access button in mobile view the text was according to wireframe in font-weight 'normal' (400), but I changed it to fontweight bold (700) which seemed more in line with the visual display of the text.
 
 ### Content
 
