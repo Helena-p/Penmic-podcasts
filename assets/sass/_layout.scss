@@ -21,12 +21,13 @@
 // Text content
 .wrapper {
   @include flex-column;
+  align-content: space-between;
   height: 80%;
 }
 
 .content {
   @include flex-column;
-  height: 80%;
+  min-height: 40rem;
   width: 87.4%;
   &__title {
     @include title-mobile;
@@ -41,6 +42,7 @@
   }
   &__links {
     width: 100%;
+    margin-bottom: 2rem;
     &--list {
       display: flex;
       width: 100%;
@@ -80,8 +82,9 @@ li + li {
 // Input field and button
 .action {
   @include flex-column;
-  height: 11rem;
+  min-height: 11rem;
   text-align: center;
+  margin-top: 2rem;
   &__email {
     @include mobile-cta;
     @include field-sm;

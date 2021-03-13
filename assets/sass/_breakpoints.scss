@@ -1,0 +1,8 @@
+@import "variable";
+@import "mixin";
+
+@media screen and (min-width: 600px) {
+  .content__title {
+    font-size: 3.6rem;
+  }
+}
