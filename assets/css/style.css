@@ -3,7 +3,7 @@
 
 .body {
   font-family: "Chivo", sans-serif;
-  background: linear-gradient(rgba(18, 23, 37, 0.8), rgba(18, 23, 37, 0.9)), url("../../assets/mobile/ezgif.com-gif-maker.webp") no-repeat center;
+  background: linear-gradient(rgba(18, 23, 37, 0.9), rgba(18, 23, 37, 0.9)), url("../../assets/mobile/ezgif.com-gif-maker.webp") no-repeat center;
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -40,27 +40,38 @@
     text-align: center;
     font-weight: 300;
     color: #c2cbe5; }
-  .content__links--list {
-    display: flex;
-    width: 100%;
-    list-style-type: none;
-    text-decoration: none; }
+  .content__links {
+    width: 100%; }
+    .content__links--list {
+      display: flex;
+      width: 100%;
+      padding-left: 0;
+      list-style-type: none;
+      text-decoration: none;
+      justify-content: space-between; }
+
+li + li {
+  margin-left: 2rem; }
 
 .spotify {
   width: 56px;
-  height: 17px; }
+  height: 17px;
+  opacity: 0.5; }
 
 .apple {
   width: 45px;
-  height: 17px; }
+  height: 17px;
+  opacity: 0.5; }
 
 .google {
   width: 73px;
-  height: 11px; }
+  height: 11px;
+  opacity: 0.5; }
 
 .pocket {
   width: 77px;
-  height: 15px; }
+  height: 15px;
+  opacity: 0.5; }
 
 .action {
   display: flex;
@@ -80,7 +91,9 @@
     background-color: #2c344b;
     mix-blend-mode: normal; }
     .action__email::placeholder {
-      padding-left: 3.2rem; }
+      padding-left: 3.2rem;
+      color: #fff;
+      opacity: 0.5; }
   .action__btn {
     font-weight: 400;
     font-size: 1.4rem;

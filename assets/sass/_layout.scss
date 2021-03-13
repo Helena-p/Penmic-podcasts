@@ -7,7 +7,7 @@
 
 .body {
   font-family: "Chivo", sans-serif;
-  background: linear-gradient(rgba(18, 23, 37, 0.8), rgba(18, 23, 37, 0.9)),
+  background: linear-gradient(rgba(18, 23, 37, 0.9), rgba(18, 23, 37, 0.9)),
     url("../../assets/mobile/ezgif.com-gif-maker.webp") no-repeat center;
   background-size: cover;
   width: 100%;
@@ -40,30 +40,41 @@
     @include paragraph;
   }
   &__links {
+    width: 100%;
     &--list {
       display: flex;
       width: 100%;
+      padding-left: 0;
       list-style-type: none;
       text-decoration: none;
+      justify-content: space-between;
     }
   }
+}
+
+li + li {
+  margin-left: 2rem;
 }
 
 .spotify {
   width: 56px;
   height: 17px;
+  opacity: 0.5;
 }
 .apple {
   width: 45px;
   height: 17px;
+  opacity: 0.5;
 }
 .google {
   width: 73px;
   height: 11px;
+  opacity: 0.5;
 }
 .pocket {
   width: 77px;
   height: 15px;
+  opacity: 0.5;
 }
 
 // Input field and button
@@ -76,6 +87,8 @@
     @include field-sm;
     &::placeholder {
       padding-left: 3.2rem;
+      color: $text-white;
+      opacity: 0.5;
     }
   }
   &__btn {
