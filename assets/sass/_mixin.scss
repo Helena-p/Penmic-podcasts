@@ -2,7 +2,7 @@
 
 @mixin font {
   font-weight: 300;
-  color: $text-white;
+  color: $green;
   text-transform: uppercase;
 }
 
@@ -13,14 +13,12 @@
 
 // Fonts Mobile
 @mixin title-mobile {
-  @include font;
   font-size: 2.6rem;
   line-height: 3.8rem;
   text-align: center;
 }
 
 @mixin mobile-p {
-  @include paragraph;
   font-size: 1.5rem;
   line-height: 2.5rem;
   text-align: center;
@@ -28,20 +26,17 @@
 
 // Fonts Tablet
 @mixin title-tablet {
-  @include font;
   font-size: 4.8rem;
   line-height: 5.6rem;
 }
 
 @mixin tablet-p {
-  @include paragraph;
   font-size: 1.8rem;
   line-height: 2.8rem;
 }
 
 // Fonts Desktop
 @mixin title-desktop {
-  @include font;
   font-size: 5.2rem;
   line-height: 6.2rem;
 }

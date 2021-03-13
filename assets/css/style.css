@@ -23,7 +23,44 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 80%; }
+  height: 80%;
+  width: 87.4%; }
+  .content__title {
+    font-size: 2.6rem;
+    line-height: 3.8rem;
+    text-align: center;
+    font-weight: 300;
+    color: #54e6af;
+    text-transform: uppercase; }
+    .content__title--span {
+      color: #fff; }
+  .content__paragraph {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    font-weight: 300;
+    color: #c2cbe5; }
+  .content__links--list {
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+    text-decoration: none; }
+
+.spotify {
+  width: 56px;
+  height: 17px; }
+
+.apple {
+  width: 45px;
+  height: 17px; }
+
+.google {
+  width: 73px;
+  height: 11px; }
+
+.pocket {
+  width: 77px;
+  height: 15px; }
 
 .action {
   display: flex;

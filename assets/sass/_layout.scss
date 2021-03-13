@@ -27,6 +27,43 @@
 .content {
   @include flex-column;
   height: 80%;
+  width: 87.4%;
+  &__title {
+    @include title-mobile;
+    @include font;
+    &--span {
+      color: $text-white;
+    }
+  }
+  &__paragraph {
+    @include mobile-p;
+    @include paragraph;
+  }
+  &__links {
+    &--list {
+      display: flex;
+      width: 100%;
+      list-style-type: none;
+      text-decoration: none;
+    }
+  }
+}
+
+.spotify {
+  width: 56px;
+  height: 17px;
+}
+.apple {
+  width: 45px;
+  height: 17px;
+}
+.google {
+  width: 73px;
+  height: 11px;
+}
+.pocket {
+  width: 77px;
+  height: 15px;
 }
 
 // Input field and button
