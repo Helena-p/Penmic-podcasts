@@ -18,6 +18,10 @@
   justify-content: center;
 }
 
+.image {
+  display: none;
+}
+
 // Text content
 .wrapper {
   @include flex-column;
