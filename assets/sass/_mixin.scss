@@ -46,26 +46,45 @@
   line-height: 6.2rem;
 }
 
-// Button
+// Button & email input field
 @mixin mobile-cta {
-  width: 32.6rem;
-  height: 4.6rem;
   font-weight: 400;
   font-size: 1.4px;
   line-height: 2.8rem;
   border-radius: 10rem;
 }
 
-@mixin mobile-btn {
+@mixin btn-sm {
   @include mobile-cta;
+  width: 32.6rem;
+  height: 4.6rem;
   background-color: $green;
   color: $dark-blue;
 }
 
-@mixin mobile-input-field {
+@mixin field-sm {
   @include mobile-cta;
+  width: 32.6rem;
+  height: 4.6rem;
   background-color: $dark-gray;
   color: $text-white;
   opacity: 0.5;
   mix-blend-mode: normal;
+}
+
+@mixin field-lg {
+  @include mobile-cta;
+  width: 42.7rem;
+  height: 5.6rem;
+  background-color: $dark-gray;
+  color: $text-white;
+  opacity: 0.5;
+  mix-blend-mode: normal;
+}
+
+@mixin btn-lg {
+  @include mobile-cta;
+  width: 16.2rem;
+  height: 4.6rem;
+  background-color: $green;
 }
