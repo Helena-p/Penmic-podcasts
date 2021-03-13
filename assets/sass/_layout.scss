@@ -101,6 +101,7 @@ li + li {
     @include mobile-cta;
     @include field-sm;
     &::placeholder {
+      font-weight: 700;
       padding-left: 3.2rem;
       color: $text-white;
       opacity: 0.5;

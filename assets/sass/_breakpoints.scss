@@ -35,6 +35,8 @@
     align-self: flex-start;
   }
   .content {
+    width: 63.5rem;
+    height: 51rem;
     background-color: $dark-blue;
     align-items: flex-start;
     &__title {
@@ -78,15 +80,26 @@
 
     &__email {
       @include field-lg;
+      @include mobile-cta;
+      padding-left: 3.2rem;
       border-radius: 10rem;
+      border: none;
+      &::placeholder {
+        font-weight: 700;
+        padding-left: 3.2rem;
+        color: $text-white;
+        opacity: 0.5;
+      }
     }
     &__btn {
       @include btn-lg;
-      //   padding: 10px 30px;
+      @include mobile-cta;
+      font-weight: 700;
+      border: none;
       border-radius: 10rem;
       position: absolute;
-      top: 0;
-      right: 0;
+      top: 11%;
+      right: -6%;
       z-index: 2;
     }
   }
