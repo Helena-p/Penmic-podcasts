@@ -1,49 +1,71 @@
 @import "variable";
 
-// Fonts Mobile
-@mixin title-mobile {
-  font-family: "Chivo", sans-serif;
-  font-size: 2.6rem;
-  font-weight: 400;
+@mixin font {
+  font-weight: 300;
   color: $text-white;
   text-transform: uppercase;
+}
+
+@mixin paragraph {
+  font-weight: 300;
+  color: $light-gray;
+}
+
+// Fonts Mobile
+@mixin title-mobile {
+  @include font;
+  font-size: 2.6rem;
   line-height: 3.8rem;
   text-align: center;
 }
 
 @mixin mobile-p {
-  font-family: "Chivo", sans-serif;
-  font-weight: 400;
+  @include paragraph;
   font-size: 1.5rem;
   line-height: 2.5rem;
   text-align: center;
-  color: $light-gray;
 }
 
 // Fonts Tablet
 @mixin title-tablet {
-  font-family: "Chivo", sans-serif;
+  @include font;
   font-size: 4.8rem;
-  font-weight: 400;
-  color: $text-white;
-  text-transform: uppercase;
   line-height: 5.6rem;
 }
 
 @mixin tablet-p {
-  font-family: "Chivo", sans-serif;
-  font-weight: 400;
+  @include paragraph;
   font-size: 1.8rem;
   line-height: 2.8rem;
-  color: $light-gray;
 }
 
 // Fonts Desktop
 @mixin title-desktop {
-  font-family: "Chivo", sans-serif;
+  @include font;
   font-size: 5.2rem;
-  font-weight: 400;
-  color: $text-white;
-  text-transform: uppercase;
   line-height: 6.2rem;
+}
+
+// Button
+@mixin mobile-cta {
+  width: 32.6rem;
+  height: 4.6rem;
+  font-weight: 400;
+  font-size: 1.4px;
+  line-height: 2.8rem;
+  border-radius: 10rem;
+}
+
+@mixin mobile-btn {
+  @include mobile-cta;
+  background-color: $green;
+  color: $dark-blue;
+}
+
+@mixin mobile-input-field {
+  @include mobile-cta;
+  background-color: $dark-gray;
+  color: $text-white;
+  opacity: 0.5;
+  mix-blend-mode: normal;
 }
