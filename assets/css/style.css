@@ -61,23 +61,23 @@ li + li {
   margin-left: 2rem; }
 
 .spotify {
-  width: 56px;
-  height: 17px;
+  width: 5.6rem;
+  height: 1.7rem;
   opacity: 0.5; }
 
 .apple {
-  width: 45px;
-  height: 17px;
+  width: 4.5rem;
+  height: 1.7rem;
   opacity: 0.5; }
 
 .google {
-  width: 73px;
-  height: 11px;
+  width: 7.3rem;
+  height: 1.1rem;
   opacity: 0.5; }
 
 .pocket {
-  width: 77px;
-  height: 15px;
+  width: 7.7rem;
+  height: 1.5rem;
   opacity: 0.5; }
 
 .action {
@@ -139,6 +139,45 @@ li + li {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: -1; } }
+    z-index: -1; }
+
+  .logo {
+    align-self: flex-start; }
+
+  .content {
+    background-color: #121725;
+    align-items: flex-start; }
+    .content__title {
+      font-size: 4.8rem;
+      line-height: 5.6rem;
+      text-align: left; }
+    .content__paragraph {
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+      text-align: left;
+      max-width: 44.5rem; }
+
+  .spotify {
+    width: 9.6rem;
+    height: 2.9rem;
+    opacity: 0.5; }
+
+  .apple {
+    width: 7.8rem;
+    height: 2.9rem;
+    opacity: 0.5; }
+
+  .google {
+    width: 12.5rem;
+    height: 1.8rem;
+    opacity: 0.5; }
+
+  .pocket {
+    width: 12.9rem;
+    height: 2.6rem;
+    opacity: 0.5; }
+
+  .action {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
