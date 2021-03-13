@@ -14,6 +14,9 @@
 .image {
   display: none; }
 
+.combination {
+  display: none; }
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -178,6 +181,30 @@ li + li {
     opacity: 0.5; }
 
   .action {
-    display: none; } }
+    display: none; }
+
+  .combination {
+    display: flex;
+    width: 427px;
+    height: 56px;
+    position: relative; }
+    .combination__email {
+      width: 42.7rem;
+      height: 5.6rem;
+      background-color: #2c344b;
+      color: #fff;
+      opacity: 0.5;
+      mix-blend-mode: normal;
+      border-radius: 10rem; }
+    .combination__btn {
+      width: 16.2rem;
+      height: 4.6rem;
+      background-color: #54e6af;
+      color: #121725;
+      border-radius: 10rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 2; } }
 
 /*# sourceMappingURL=style.css.map */

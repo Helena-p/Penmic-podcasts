@@ -22,6 +22,10 @@
   display: none;
 }
 
+.combination {
+  display: none;
+}
+
 // Text content
 .wrapper {
   @include flex-column;

@@ -70,4 +70,24 @@
   .action {
     display: none;
   }
+  .combination {
+    display: flex;
+    width: 427px;
+    height: 56px;
+    position: relative;
+
+    &__email {
+      @include field-lg;
+      border-radius: 10rem;
+    }
+    &__btn {
+      @include btn-lg;
+      //   padding: 10px 30px;
+      border-radius: 10rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 2;
+    }
+  }
 }
