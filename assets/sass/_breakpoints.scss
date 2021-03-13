@@ -52,9 +52,11 @@
     &__title {
       @include title-tablet;
       text-align: left;
+      margin-bottom: 0;
     }
     &__paragraph {
       @include tablet-p;
+      margin: 0;
       text-align: left;
       max-width: 44.5rem;
     }
