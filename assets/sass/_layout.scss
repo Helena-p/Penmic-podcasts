@@ -26,6 +26,10 @@
   display: none;
 }
 
+.dots {
+  display: none;
+}
+
 // Text content
 .wrapper {
   @include flex-column;

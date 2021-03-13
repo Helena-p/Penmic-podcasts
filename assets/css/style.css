@@ -17,6 +17,9 @@
 .combination {
   display: none; }
 
+.dots {
+  display: none; }
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -145,6 +148,10 @@ li + li {
     right: 0;
     z-index: -1; }
 
+  .wrapper {
+    height: 100%;
+    margin-top: 5rem; }
+
   .logo {
     align-self: flex-start; }
 
@@ -227,6 +234,12 @@ li + li {
       position: absolute;
       top: 11%;
       right: -6%;
-      z-index: 2; } }
+      z-index: 2; }
+
+  .dots {
+    display: block;
+    width: 23.2rem;
+    height: 10.4rem;
+    align-self: flex-start; } }
 
 /*# sourceMappingURL=style.css.map */
