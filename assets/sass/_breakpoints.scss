@@ -94,7 +94,6 @@
       @include field-lg;
       @include mobile-cta;
       padding-left: 3.2rem;
-      border-radius: 10rem;
       border: none;
       &::placeholder {
         font-weight: 700;
@@ -108,7 +107,6 @@
       @include mobile-cta;
       font-weight: 700;
       border: none;
-      border-radius: 10rem;
       position: absolute;
       top: 11%;
       right: -6%;
@@ -120,5 +118,41 @@
     width: 23.2rem;
     height: 10.4rem;
     align-self: flex-start;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .image {
+    display: none;
+  }
+  .image__lg {
+    display: block;
+    position: absolute;
+    top: 14%;
+    right: 0;
+    z-index: -1;
+  }
+  .wrapper {
+    width: 77%;
+    height: 72%;
+    flex-wrap: wrap;
+    margin-top: 0;
+  }
+  .content {
+    width: 72.3rem;
+    &__links {
+      margin-bottom: 0;
+      &--list {
+        justify-content: flex-start;
+      }
+    }
+  }
+  .dots {
+    position: absolute;
+    right: 0;
+    bottom: 9%;
+  }
+  li + li {
+    margin-left: 4rem;
   }
 }
