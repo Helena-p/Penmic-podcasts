@@ -230,7 +230,7 @@ li + li {
         font-weight: 700;
         padding-left: 3.2rem;
         color: #fff;
-        opacity: 0.5; }
+        opacity: 0.7; }
     .combination__btn {
       width: 16.2rem;
       height: 4.6rem;
@@ -246,7 +246,7 @@ li + li {
       border: none;
       position: absolute;
       top: 11%;
-      right: -6%;
+      right: -6.6%;
       z-index: 2; }
 
   .dots {
@@ -267,9 +267,10 @@ li + li {
 
   .wrapper {
     width: 77%;
-    height: 72%;
+    height: 76%;
     flex-wrap: wrap;
-    margin-top: 0; }
+    margin-top: 0;
+    margin-bottom: 4rem; }
 
   .content {
     width: 72.3rem; }
@@ -284,6 +285,12 @@ li + li {
     bottom: 9%; }
 
   li + li {
-    margin-left: 4rem; } }
+    margin-left: 4rem; }
+
+  .combination__email {
+    padding-left: 0; }
+  .combination__btn {
+    top: 11%;
+    right: 0.6%; } }
 
 /*# sourceMappingURL=style.css.map */
