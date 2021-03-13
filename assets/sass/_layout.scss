@@ -27,6 +27,7 @@
 
 .content {
   @include flex-column;
+  align-content: space-between;
   min-height: 40rem;
   width: 87.4%;
   &__title {
@@ -45,6 +46,7 @@
     margin-bottom: 2rem;
     &--list {
       display: flex;
+      flex-wrap: wrap;
       width: 100%;
       padding-left: 0;
       list-style-type: none;
@@ -85,6 +87,8 @@ li + li {
   min-height: 11rem;
   text-align: center;
   margin-top: 2rem;
+  max-width: 40rem;
+  width: 100%;
   &__email {
     @include mobile-cta;
     @include field-sm;
