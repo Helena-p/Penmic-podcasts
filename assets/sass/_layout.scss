@@ -1,4 +1,5 @@
 @import "variable";
+@import "mixin";
 
 :root {
   font-size: 62.5%;
@@ -11,4 +12,33 @@
   background-size: cover;
   width: 100%;
   height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Text content
+.wrapper {
+  @include flex-column;
+  height: 80%;
+}
+
+.content {
+  @include flex-column;
+  height: 80%;
+}
+
+// Input field and button
+.action {
+  @include flex-column;
+  height: 11rem;
+  text-align: center;
+  &__email {
+    @include field-sm;
+  }
+  &__btn {
+    @include btn-sm;
+    margin-top: 1.6rem;
+  }
 }
