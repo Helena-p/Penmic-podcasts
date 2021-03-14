@@ -182,6 +182,11 @@ li + li {
       margin: 0;
       text-align: left;
       max-width: 44.5rem; }
+    .content__links--list {
+      justify-content: flex-start; }
+
+  li + li {
+    margin-left: 3rem; }
 
   .spotify {
     width: 9.6rem;

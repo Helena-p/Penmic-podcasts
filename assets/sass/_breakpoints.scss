@@ -7,6 +7,7 @@
     max-width: 32.6rem;
     width: 100%;
   }
+
   .action__btn {
     max-width: 32.6rem;
     width: 100%;
@@ -26,6 +27,7 @@
     background-image: none;
     background-color: $dark-blue;
   }
+
   .image {
     display: block;
     position: absolute;
@@ -33,13 +35,16 @@
     right: 0;
     z-index: -1;
   }
+
   .wrapper {
     height: 95%;
     margin-top: 5rem;
   }
+
   .logo {
     align-self: flex-start;
   }
+
   .content {
     width: 63.5rem;
     height: 51rem;
@@ -62,30 +67,43 @@
       text-align: left;
       max-width: 44.5rem;
     }
+    &__links--list {
+      justify-content: flex-start;
+    }
   }
+
+  li + li {
+    margin-left: 3rem;
+  }
+
   .spotify {
     width: 9.6rem;
     height: 2.9rem;
     opacity: 0.5;
   }
+
   .apple {
     width: 7.8rem;
     height: 2.9rem;
     opacity: 0.5;
   }
+
   .google {
     width: 12.5rem;
     height: 1.8rem;
     opacity: 0.5;
   }
+
   .pocket {
     width: 12.9rem;
     height: 2.6rem;
     opacity: 0.5;
   }
+
   .action {
     display: none;
   }
+
   .combination {
     display: flex;
     width: 427px;
@@ -115,6 +133,7 @@
       z-index: 2;
     }
   }
+
   .dots {
     display: block;
     width: 23.2rem;
@@ -128,6 +147,7 @@
   .image {
     display: none;
   }
+
   .image__lg {
     display: block;
     position: absolute;
@@ -135,6 +155,7 @@
     right: 0;
     z-index: -1;
   }
+
   .wrapper {
     width: 77%;
     height: 76%;
@@ -142,6 +163,7 @@
     margin-top: 0;
     margin-bottom: 4rem;
   }
+
   .content {
     width: 72.3rem;
     &__links {
@@ -151,18 +173,22 @@
       }
     }
   }
+
   .dots {
     position: absolute;
     right: 0;
     bottom: 9%;
   }
+
   li + li {
     margin-left: 4rem;
   }
+
   .combination {
     &__email {
       padding-left: 0;
     }
+
     &__btn {
       top: 11%;
       right: 0.6%;
