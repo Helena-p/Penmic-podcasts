@@ -126,6 +126,10 @@ li + li {
     color: #121725;
     margin-top: 1.6rem;
     font-weight: 700; }
+    .action__btn:hover {
+      background-color: #a4f2d4;
+      transform: scale(1.1);
+      transition: ease-in-out 0.8s; }
 
 @media screen and (max-width: 350px) {
   .action__email {
@@ -134,7 +138,11 @@ li + li {
 
   .action__btn {
     max-width: 32.6rem;
-    width: 100%; } }
+    width: 100%; }
+    .action__btn:hover {
+      background-color: #a4f2d4;
+      transform: scale(1.1);
+      transition: ease-in-out 0.8s; } }
 @media screen and (min-width: 600px) {
   .content__title {
     font-size: 3.6rem; } }
@@ -253,6 +261,10 @@ li + li {
       top: 11%;
       right: -6.6%;
       z-index: 2; }
+      .combination__btn:hover {
+        background-color: #a4f2d4;
+        transform: scale(1.1);
+        transition: ease-in-out 0.8s; }
 
   .dots {
     display: block;

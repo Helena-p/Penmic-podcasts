@@ -121,5 +121,8 @@ li + li {
     @include btn-sm;
     margin-top: 1.6rem;
     font-weight: 700;
+    &:hover {
+      @include hover;
+    }
   }
 }
