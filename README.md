@@ -40,7 +40,8 @@ As a small business owner, my time is precious and I am looking for an easy solu
 
 #### Manual testing
 
-Button clearly show expected hover effect on mouse over. Email input field takes input as expected and when entering faulty values a text explain that a faulty value have been entered. When correct vallue is entered the data is submitted as expected.
+Button clearly show expected hover effect on mouse over. Email input field takes input as expected and when entering faulty values a text explain that a faulty value have been entered. When correct vallue is entered the data is submitted as expected.<br>
+Web page is tested and inspected in the major browsers on a MacBook 13" (Safari, Edge, Firefox, Chrome)
 
 #### Other testing
 
