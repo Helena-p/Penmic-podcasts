@@ -131,6 +131,10 @@ li + li {
       transform: scale(1.1);
       transition: ease-in-out 0.8s; }
 
+#response {
+  font-size: 1.4rem;
+  color: #fb3e3e; }
+
 @media screen and (max-width: 350px) {
   .action__email {
     max-width: 32.6rem;

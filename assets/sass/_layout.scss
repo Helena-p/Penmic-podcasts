@@ -126,3 +126,7 @@ li + li {
     }
   }
 }
+
+#response {
+  @include response;
+}
