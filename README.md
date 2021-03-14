@@ -53,10 +53,10 @@ Test result can differ depending of connectivity and bandwidth
 - Best Practises 100
 - SEO 92
 
-_JsHint_
+_JsHint_<br>
 One warning - Use the function form of "use strict".
 
-_W3C_ _HTML_ _Validator_
+_W3C_ _HTML_ _Validator_<br>
 Errors for duplicate id in forms only. Since the form is the exact same but (only varies in styling and location) in two different media queries the id's cause no error in console or negative effect in the validation.
 
 ## Deployment
