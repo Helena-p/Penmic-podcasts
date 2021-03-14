@@ -1,3 +1,5 @@
+![Multiple devices](assets/desktop/screenshot.png)
+
 # Penmic podcasts
 
 The fictitious company Penmic Podcasts, is a provider of podcast services. They offer easy access and support to private individuals, as well as companies that need a host/hub for their podcasts.
