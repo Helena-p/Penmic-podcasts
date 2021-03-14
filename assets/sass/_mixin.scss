@@ -97,7 +97,10 @@
   transition: ease-in-out 0.8s;
 }
 
+// Input validation styling
 @mixin response {
   font-size: 1.4rem;
   color: $red;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }

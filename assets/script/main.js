@@ -9,7 +9,7 @@ const response = document.getElementById("response");
 button.addEventListener("click", function () {
   let email = emailField.value;
   if (validateEmail(email)) {
-    response.innerHTML = "You have successfully submitted your request!";
+    response.innerHTML = "";
   } else {
     response.innerHTML = "Oops! Please check your email";
   }

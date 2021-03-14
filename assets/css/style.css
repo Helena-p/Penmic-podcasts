@@ -133,7 +133,9 @@ li + li {
 
 #response {
   font-size: 1.4rem;
-  color: #fb3e3e; }
+  color: #fb3e3e;
+  margin-bottom: 1rem;
+  margin-top: 1rem; }
 
 @media screen and (max-width: 350px) {
   .action__email {
