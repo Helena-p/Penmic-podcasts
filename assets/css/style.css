@@ -149,9 +149,13 @@ li + li {
       background-color: #a4f2d4;
       transform: scale(1.1);
       transition: ease-in-out 0.8s; } }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 400px) {
+  .wrapper {
+    height: 85%;
+    max-height: 60rem; }
+
   .content__title {
-    font-size: 3.6rem; } }
+    font-size: 3.8rem; } }
 @media screen and (min-width: 768px) {
   .body {
     position: relative;
@@ -167,6 +171,7 @@ li + li {
 
   .wrapper {
     height: 95%;
+    max-height: none;
     margin-top: 5rem; }
 
   .logo {
@@ -291,6 +296,7 @@ li + li {
   .wrapper {
     width: 77%;
     height: 76%;
+    max-height: 70rem;
     flex-wrap: wrap;
     margin-top: 0;
     margin-bottom: 4rem; }
