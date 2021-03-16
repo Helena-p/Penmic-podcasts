@@ -31,9 +31,9 @@ function validateEmail(email) {
 btn.addEventListener("click", function () {
   let mail = emailInput.value;
   if (validateMail(mail)) {
-    response.innerHTML = "";
+    reply.innerHTML = "";
   } else {
-    response.innerHTML = "Oops! Please check your email";
+    reply.innerHTML = "Oops! Please check your email";
   }
 });
 
