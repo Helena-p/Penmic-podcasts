@@ -131,7 +131,8 @@ li + li {
       transform: scale(1.1);
       transition: ease-in-out 0.8s; }
 
-#response {
+#response,
+#reply {
   font-size: 1.4rem;
   color: #fb3e3e;
   margin-bottom: 1rem;
