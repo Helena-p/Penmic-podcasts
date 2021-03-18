@@ -93,7 +93,8 @@ li + li {
   justify-content: space-between;
   min-height: 11rem;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
+  margin: auto;
   max-width: 40rem;
   width: 100%; }
   .action__form {
@@ -207,6 +208,7 @@ li + li {
       text-align: left;
       max-width: 44.5rem; }
     .content__links {
+      height: 3.4rem;
       order: 3;
       margin-bottom: 0; }
       .content__links--list {
@@ -240,7 +242,7 @@ li + li {
     align-items: flex-start;
     width: 42.7rem;
     height: 5.6rem;
-    margin-top: 1rem;
+    margin-left: 0;
     position: relative; }
     .action__email {
       width: 42.7rem;
@@ -329,6 +331,7 @@ li + li {
       font-size: 5.2rem;
       line-height: 6.2rem; }
     .content__links {
+      height: 3rem;
       margin-bottom: 0; }
       .content__links--list {
         justify-content: flex-start; }
