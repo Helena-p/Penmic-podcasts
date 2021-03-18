@@ -69,7 +69,7 @@
     &__title {
       @include title-tablet;
       text-align: left;
-      margin-bottom: 0;
+      padding-top: 2em;
     }
     &__paragraph {
       @include tablet-p;
@@ -147,39 +147,6 @@
     }
   }
 
-  // .combination {
-  //   display: flex;
-  //   width: 427px;
-  //   height: 56px;
-  //   position: relative;
-
-  //   &__email {
-  //     @include field-lg;
-  //     @include mobile-cta;
-  //     padding-left: 3.2rem;
-  //     border: none;
-  //     &::placeholder {
-  //       font-weight: 700;
-  //       padding-left: 3.2rem;
-  //       color: $text-white;
-  //       opacity: 0.7;
-  //     }
-  //   }
-  //   &__btn {
-  //     @include btn-lg;
-  //     @include mobile-cta;
-  //     font-weight: 700;
-  //     border: none;
-  //     position: absolute;
-  //     top: 11%;
-  //     right: -6.6%;
-  //     z-index: 2;
-  //     &:hover {
-  //       @include hover;
-  //     }
-  //   }
-  // }
-
   .dots {
     display: block;
     width: 23.2rem;
@@ -230,15 +197,4 @@
   li + li {
     margin-left: 4rem;
   }
-
-  // .combination {
-  //   &__email {
-  //     padding-left: 0;
-  //   }
-
-  //   &__btn {
-  //     top: 11%;
-  //     right: 0.6%;
-  //   }
-  // }
 }
