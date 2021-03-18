@@ -123,8 +123,8 @@
   .action {
     display: flex;
     align-items: flex-start;
-    width: 427px;
-    height: 56px;
+    width: 42.7rem;
+    height: 5.6rem;
     position: relative;
     &__email {
       @include field-lg;
@@ -169,6 +169,10 @@
     display: none;
   }
 
+  .logo {
+    padding-top: 2rem;
+  }
+
   .image__lg {
     display: block;
     background: url(../../assets/desktop/ezgif.com-gif-maker.webp) no-repeat
@@ -177,7 +181,7 @@
     width: 88.8rem;
     height: 64rem;
     position: absolute;
-    top: 14%;
+    top: 14.5%;
     right: 0;
     z-index: -1;
   }
