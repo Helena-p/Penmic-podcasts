@@ -199,8 +199,7 @@ li + li {
     .content__title {
       font-size: 4.8rem;
       line-height: 5.6rem;
-      text-align: left;
-      padding-top: 2em; }
+      text-align: left; }
     .content__paragraph {
       font-size: 1.8rem;
       line-height: 2.8rem;
@@ -241,6 +240,7 @@ li + li {
     align-items: flex-start;
     width: 42.7rem;
     height: 5.6rem;
+    margin-top: 1rem;
     position: relative; }
     .action__email {
       width: 42.7rem;
@@ -327,8 +327,7 @@ li + li {
     width: 72.3rem; }
     .content__title {
       font-size: 5.2rem;
-      line-height: 6.2rem;
-      padding-top: 1.8em; }
+      line-height: 6.2rem; }
     .content__links {
       margin-bottom: 0; }
       .content__links--list {

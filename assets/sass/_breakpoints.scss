@@ -75,7 +75,6 @@
     &__title {
       @include title-tablet;
       text-align: left;
-      padding-top: 2em;
     }
     &__paragraph {
       @include tablet-p;
@@ -126,6 +125,7 @@
     align-items: flex-start;
     width: 42.7rem;
     height: 5.6rem;
+    margin-top: 1rem;
     position: relative;
     &__email {
       @include field-lg;
@@ -207,7 +207,6 @@
     width: 72.3rem;
     &__title {
       @include title-desktop;
-      padding-top: 1.8em;
     }
     &__links {
       margin-bottom: 0;
