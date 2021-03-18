@@ -101,6 +101,7 @@
 @mixin response {
   font-size: 1.4rem;
   color: $red;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+  position: absolute;
+  top: -22%;
+  left: 20%;
 }

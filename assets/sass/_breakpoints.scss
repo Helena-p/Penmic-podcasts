@@ -85,6 +85,7 @@
     }
     &__links {
       order: 3;
+      margin-bottom: 0;
 
       &--list {
         justify-content: flex-start;
@@ -130,10 +131,11 @@
       @include field-lg;
       @include mobile-cta;
       padding-left: 3.2rem;
+      margin-top: 2rem;
       border: none;
       &::placeholder {
         font-weight: 700;
-        padding-left: 3.2rem;
+        padding-left: 3rem;
         color: $text-white;
         opacity: 0.7;
       }
@@ -144,13 +146,18 @@
       font-weight: 700;
       border: none;
       position: absolute;
-      top: 0;
-      right: -14%;
+      top: 12.4%;
+      right: 1%;
       z-index: 2;
       &:hover {
         @include hover;
       }
     }
+  }
+
+  #reply {
+    top: 110%;
+    left: 10%;
   }
 
   .dots {

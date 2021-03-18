@@ -102,6 +102,9 @@ li + li {
   margin-top: 2rem;
   max-width: 40rem;
   width: 100%;
+  &__form {
+    position: relative;
+  }
   &__email {
     @include mobile-cta;
     @include field-sm;
