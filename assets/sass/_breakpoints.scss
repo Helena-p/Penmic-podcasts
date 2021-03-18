@@ -195,6 +195,7 @@
   .content {
     width: 72.3rem;
     &__title {
+      @include title-desktop;
       padding-top: 1.8em;
     }
     &__links {
