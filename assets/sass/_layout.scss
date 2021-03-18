@@ -26,9 +26,9 @@
   display: none;
 }
 
-.combination {
-  display: none;
-}
+// .combination {
+//   display: none;
+// }
 
 .dots {
   display: none;
@@ -127,7 +127,7 @@ li + li {
   }
 }
 
-#response,
+// #response,
 #reply {
   @include response;
 }

@@ -59,6 +59,7 @@
     height: 51rem;
     background-color: $dark-blue;
     justify-content: flex-end;
+    align-items: flex-start;
     &__box {
       @include flex-column;
       align-items: flex-start;
@@ -76,8 +77,12 @@
       text-align: left;
       max-width: 44.5rem;
     }
-    &__links--list {
-      justify-content: flex-start;
+    &__links {
+      order: 3;
+
+      &--list {
+        justify-content: flex-start;
+      }
     }
   }
 
@@ -110,15 +115,11 @@
   }
 
   .action {
-    display: none;
-  }
-
-  .combination {
     display: flex;
+    align-items: flex-start;
     width: 427px;
     height: 56px;
     position: relative;
-
     &__email {
       @include field-lg;
       @include mobile-cta;
@@ -137,14 +138,47 @@
       font-weight: 700;
       border: none;
       position: absolute;
-      top: 11%;
-      right: -6.6%;
+      top: 0;
+      right: -14%;
       z-index: 2;
       &:hover {
         @include hover;
       }
     }
   }
+
+  // .combination {
+  //   display: flex;
+  //   width: 427px;
+  //   height: 56px;
+  //   position: relative;
+
+  //   &__email {
+  //     @include field-lg;
+  //     @include mobile-cta;
+  //     padding-left: 3.2rem;
+  //     border: none;
+  //     &::placeholder {
+  //       font-weight: 700;
+  //       padding-left: 3.2rem;
+  //       color: $text-white;
+  //       opacity: 0.7;
+  //     }
+  //   }
+  //   &__btn {
+  //     @include btn-lg;
+  //     @include mobile-cta;
+  //     font-weight: 700;
+  //     border: none;
+  //     position: absolute;
+  //     top: 11%;
+  //     right: -6.6%;
+  //     z-index: 2;
+  //     &:hover {
+  //       @include hover;
+  //     }
+  //   }
+  // }
 
   .dots {
     display: block;
@@ -197,14 +231,14 @@
     margin-left: 4rem;
   }
 
-  .combination {
-    &__email {
-      padding-left: 0;
-    }
+  // .combination {
+  //   &__email {
+  //     padding-left: 0;
+  //   }
 
-    &__btn {
-      top: 11%;
-      right: 0.6%;
-    }
-  }
+  //   &__btn {
+  //     top: 11%;
+  //     right: 0.6%;
+  //   }
+  // }
 }
