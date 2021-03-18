@@ -37,6 +37,11 @@
   }
 
   .image {
+    background: url("../../assets/tablet/ezgif.com-gif-maker.webp") no-repeat
+      center;
+    background-size: cover;
+    width: 49.1rem;
+    height: 76.7rem;
     display: block;
     position: absolute;
     top: 0;
@@ -164,6 +169,11 @@
 
   .image__lg {
     display: block;
+    background: url(../../assets/desktop/ezgif.com-gif-maker.webp) no-repeat
+      center;
+    background-size: cover;
+    width: 88.8rem;
+    height: 64rem;
     position: absolute;
     top: 14%;
     right: 0;
@@ -182,6 +192,9 @@
 
   .content {
     width: 72.3rem;
+    &__title {
+      padding-top: 1.8em;
+    }
     &__links {
       margin-bottom: 0;
       &--list {
