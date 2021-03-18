@@ -39,7 +39,9 @@
     <div class="image__lg" role="img" aria-label="[Man in studio]"></div>
     <main class="wrapper">
       <!-- Logo -->
-      <div class="logo"><img src="assets/desktop/logo.svg" alt="Logo" /></div>
+      <div class="logo" aria-hidden="true">
+        <img src="assets/desktop/logo.svg" alt="Logo" />
+      </div>
 
       <!-- Text content -->
       <section class="content">
@@ -56,7 +58,7 @@
         </div>
 
         <!-- Icons -->
-        <div class="content__links">
+        <div class="content__links" aria-hidden="true">
           <ul class="content__links--list">
             <li>
               <a>
@@ -107,6 +109,8 @@
               id="emailInput"
               type="email"
               name="email"
+              aria-label="Email input"
+              aria-required="true"
               placeholder="Email address"
             />
             <button class="action__btn" type="submit" id="btn">
@@ -115,9 +119,7 @@
           </form>
         </div>
       </section>
-      <div class="dots">
-        <img src="assets/desktop/bg-pattern-dots.svg" alt="Multiple dots" />
-      </div>
+      <div class="dots" aria-hidden="true"></div>
     </main>
     <script src="assets/script/main.js"></script>
   </body>
