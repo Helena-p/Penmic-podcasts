@@ -40,7 +40,7 @@ As a small business owner, my time is precious and I am looking for an easy solu
 
 #### Manual testing
 
-Button clearly show expected hover effect on mouse over. Email input field takes input as expected and when entering faulty values a text explain that a faulty value have been entered. When correct vallue is entered the data is submitted as expected.<br>
+Button clearly show expected hover effect on mouse over. Email input field takes input as expected and when entering faulty values a text explain that a faulty value have been entered. When correct value is entered the data is submitted as expected.<br>
 Web page is tested and inspected in the major browsers on a MacBook 13" (Safari, Edge, Firefox, Chrome)
 
 #### Other testing
@@ -52,15 +52,21 @@ Test result can differ depending of connectivity and bandwidth
 - Performance 100 (FCP 1.4s, LCP 1.4s, TtI 1.4s)
 - Accessability 86 (Aria in form could be improved, contrast ratio as well as keyboard navigation)
 - Best Practises 100
-- SEO 92
+- SEO 92<br>
+  Solution - Poor score in accessability is corrected with _aria-label=email_ and _aria-rerquired='true'_ in email input field.
 
 _JsHint_<br>
 One warning - Use the function form of "use strict".
 
 _W3C_ _HTML_ _Validator_<br>
-Errors for duplicate id in forms only. Since the form is the exact same but (only varies in styling and location) in two different media queries the id's cause no error in console or negative effect in the validation.
+Errors for duplicate id in forms only. Since the form is the exact same but (only varies in styling and location) in two different media queries the id's cause no error in console or negative effect in the validation.<br>
+Solution - Removed one form, altered the email/button design to work in all screen sizes. This solution reduced both html, sass and javascript code. New html validation gave no errors.<br>
+
+On recommendation by Matt Studdert, Frontend Mentors, I moved the background images from html tag to css selector, to meet general practise for background images with no important context.
 
 ## Deployment
+
+The project is deployed with GitHub Pages.
 
 ## Credits
 
