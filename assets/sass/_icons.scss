@@ -1,0 +1,48 @@
+// Icons
+.spotify {
+  width: 5.6rem;
+  height: 1.7rem;
+  opacity: 0.5;
+
+  @include breakpoint(medium) {
+    width: 5.3rem;
+    height: 1.6rem;
+    opacity: 0.5;
+  }
+}
+
+.apple {
+  width: 4.5rem;
+  height: 1.7rem;
+  opacity: 0.5;
+
+  @include breakpoint(medium) {
+    width: 4.3rem;
+    height: 1.6rem;
+    opacity: 0.5;
+  }
+}
+
+.google {
+  width: 7.3rem;
+  height: 1.1rem;
+  opacity: 0.5;
+
+  @include breakpoint(medium) {
+    width: 6.9rem;
+    height: 1rem;
+    opacity: 0.5;
+  }
+}
+
+.pocket {
+  width: 7.7rem;
+  height: 1.5rem;
+  opacity: 0.5;
+
+  @include breakpoint(medium) {
+    width: 7.2rem;
+    height: 1.4rem;
+    opacity: 0.5;
+  }
+}

@@ -21,17 +21,52 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include breakpoint(medium) {
+    position: relative;
+    background-image: none;
+    background-color: $dark-blue;
+  }
 }
 
 .image {
   display: none;
+
+  @include breakpoint(medium) {
+    background: url("../../assets/tablet/ezgif.com-gif-maker.webp") no-repeat
+      center;
+    background-size: cover;
+    width: 27.3rem;
+    height: 42.6rem;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
 }
+
 .image__lg {
   display: none;
 }
 
 .dots {
   display: none;
+
+  @include breakpoint(medium) {
+    background: url("../../assets/desktop/bg-pattern-dots.svg") no-repeat center;
+    background-size: cover;
+    display: block;
+    width: 12.8rem;
+    height: 5.7rem;
+    align-self: flex-start;
+  }
+}
+
+.logo {
+  @include breakpoint(medium) {
+    align-self: flex-start;
+  }
 }
 
 // Text content
@@ -39,18 +74,38 @@
   @include flex-column;
   align-content: space-between;
   height: 80%;
+
+  @include breakpoint(medium) {
+    height: 95%;
+    max-height: none;
+    margin-top: 2.8rem;
+    margin-right: 6%;
+  }
 }
 
 .content {
   @include flex-column;
-  align-content: space-between;
   min-height: 44rem;
   width: 87.4%;
+  max-width: 50rem;
+
+  @include breakpoint(medium) {
+    width: 35.2rem;
+    height: 29rem;
+    justify-content: center;
+    align-items: flex-start;
+  }
 
   &__box {
     height: 98%;
     @include flex-column;
     align-content: space-between;
+
+    @include breakpoint(medium) {
+      background-color: $dark-blue;
+      width: 100%;
+      height: 28.3rem;
+    }
   }
 
   &__title {
@@ -59,16 +114,36 @@
     &--span {
       color: $text-white;
     }
+
+    @include breakpoint(medium) {
+      @include title-tablet;
+      text-align: left;
+    }
   }
 
   &__paragraph {
     @include mobile-p;
     @include paragraph;
+
+    @include breakpoint(medium) {
+      @include tablet-p;
+      margin: 0;
+      text-align: left;
+      align-self: flex-start;
+      max-width: 24.7rem;
+    }
   }
 
   &__links {
     width: 100%;
     margin-bottom: 2rem;
+
+    @include breakpoint(medium) {
+      height: 1.9rem;
+      order: 3;
+      margin-bottom: 0;
+    }
+
     &--list {
       display: flex;
       flex-wrap: wrap;
@@ -77,34 +152,20 @@
       list-style-type: none;
       text-decoration: none;
       justify-content: space-between;
+
+      @include breakpoint(medium) {
+        justify-content: flex-start;
+      }
     }
   }
 }
 
 li + li {
   margin-left: 2rem;
-}
 
-// Icons
-.spotify {
-  width: 5.6rem;
-  height: 1.7rem;
-  opacity: 0.5;
-}
-.apple {
-  width: 4.5rem;
-  height: 1.7rem;
-  opacity: 0.5;
-}
-.google {
-  width: 7.3rem;
-  height: 1.1rem;
-  opacity: 0.5;
-}
-.pocket {
-  width: 7.7rem;
-  height: 1.5rem;
-  opacity: 0.5;
+  @include breakpoint(medium) {
+    margin-left: 1.7rem;
+  }
 }
 
 // Input field and button
@@ -116,9 +177,20 @@ li + li {
   margin: auto;
   max-width: 40rem;
   width: 100%;
+
+  @include breakpoint(medium) {
+    display: flex;
+    align-items: flex-start;
+    width: 23.7rem;
+    height: 3rem;
+    margin-left: 0;
+    position: relative;
+  }
+
   &__form {
     position: relative;
   }
+
   &__email {
     @include mobile-cta;
     @include field-sm;
@@ -128,7 +200,21 @@ li + li {
       color: $text-white;
       opacity: 0.5;
     }
+
+    @include breakpoint(medium) {
+      @include field-lg;
+      @include mobile-cta;
+      margin-top: 1rem;
+      border: none;
+      &::placeholder {
+        font-size: 0.7rem;
+        line-height: 1.5rem;
+        padding-left: 1.7rem;
+        opacity: 0.7;
+      }
+    }
   }
+
   &__btn {
     @include mobile-cta;
     @include btn-sm;
@@ -137,9 +223,27 @@ li + li {
     &:hover {
       @include hover;
     }
+
+    @include breakpoint(medium) {
+      @include btn-lg;
+      font-size: 0.7rem;
+      font-weight: 700;
+      border: none;
+      position: absolute;
+      top: -6%;
+      right: 1%;
+      z-index: 2;
+    }
   }
 }
 
 #reply {
   @include response;
+  font-size: 1.4rem;
+
+  @include breakpoint(medium) {
+    font-size: 0.7rem;
+    top: 110%;
+    left: 10%;
+  }
 }

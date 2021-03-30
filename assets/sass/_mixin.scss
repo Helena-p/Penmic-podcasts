@@ -24,19 +24,19 @@
 
 // Fonts Tablet
 @mixin title-tablet {
-  font-size: 4.8rem;
-  line-height: 5.6rem;
+  font-size: 2.6rem;
+  line-height: 3rem;
 }
 
 @mixin tablet-p {
-  font-size: 1.8rem;
-  line-height: 2.8rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 // Fonts Desktop
 @mixin title-desktop {
-  font-size: 5.2rem;
-  line-height: 6.2rem;
+  font-size: 2.8rem;
+  line-height: 3.4rem;
 }
 
 // Button & email input field
@@ -63,8 +63,8 @@
 }
 
 @mixin field-lg {
-  width: 42.7rem;
-  height: 5.6rem;
+  width: 23.7rem;
+  height: 3.1rem;
   background-color: $dark-gray;
   border-radius: 10rem;
   color: $text-white;
@@ -73,8 +73,8 @@
 }
 
 @mixin btn-lg {
-  width: 16.2rem;
-  height: 4.6rem;
+  width: 9rem;
+  height: 2.5rem;
   background-color: $green;
   border-radius: 10rem;
   color: $dark-blue;
@@ -97,7 +97,6 @@
 
 // Input validation styling
 @mixin response {
-  font-size: 1.4rem;
   color: $red;
   position: absolute;
   top: -22%;
