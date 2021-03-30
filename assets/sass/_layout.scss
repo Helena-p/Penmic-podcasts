@@ -1,9 +1,13 @@
-@import "variable";
-@import "mixin";
-
 // Base
 :root {
+  // 10px / 16px = 62.5%
+  // 1rem = 10px
   font-size: 62.5%;
+
+  @include breakpoint(medium) {
+    // 1rem = 18px
+    font-size: 112.5%;
+  }
 }
 
 .body {
@@ -40,8 +44,15 @@
 .content {
   @include flex-column;
   align-content: space-between;
-  min-height: 40rem;
+  min-height: 44rem;
   width: 87.4%;
+
+  &__box {
+    height: 98%;
+    @include flex-column;
+    align-content: space-between;
+  }
+
   &__title {
     @include title-mobile;
     @include font;
@@ -49,10 +60,12 @@
       color: $text-white;
     }
   }
+
   &__paragraph {
     @include mobile-p;
     @include paragraph;
   }
+
   &__links {
     width: 100%;
     margin-bottom: 2rem;

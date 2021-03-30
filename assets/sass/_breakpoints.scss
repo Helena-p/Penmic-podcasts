@@ -1,6 +1,3 @@
-@import "variable";
-@import "mixin";
-
 // Small Screens
 @media screen and (max-width: 350px) {
   .action__email {
@@ -18,214 +15,213 @@
 }
 
 // Medium Screens
-@media screen and (min-width: 400px) {
-  .wrapper {
-    height: 85%;
-    max-height: 60rem;
-  }
+// @media screen and (min-width: 400px) {
+//   .wrapper {
+//     height: 85%;
+//     max-height: 60rem;
+//   }
 
-  .content__title {
-    font-size: 3.8rem;
-  }
-}
+//   .content__title {
+//     font-size: 3.8rem;
+//   }
+// }
 
-@media screen and (min-width: 768px) {
-  .body {
-    position: relative;
-    background-image: none;
-    background-color: $dark-blue;
-  }
+// @media screen and (min-width: 768px) {
+//   .body {
+//     position: relative;
+//     background-image: none;
+//     background-color: $dark-blue;
+//   }
 
-  .image {
-    background: url("../../assets/tablet/ezgif.com-gif-maker.webp") no-repeat
-      center;
-    background-size: cover;
-    width: 49.1rem;
-    height: 76.7rem;
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-  }
+//   .image {
+//     background: url("../../assets/tablet/ezgif.com-gif-maker.webp") no-repeat
+//       center;
+//     background-size: cover;
+//     width: 49.1rem;
+//     height: 76.7rem;
+//     display: block;
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     z-index: -1;
+//   }
 
-  .wrapper {
-    height: 95%;
-    max-height: none;
-    margin-top: 5rem;
-    margin-right: 6%;
-  }
+//   .wrapper {
+//     height: 95%;
+//     max-height: none;
+//     margin-top: 5rem;
+//     margin-right: 6%;
+//   }
 
-  .logo {
-    align-self: flex-start;
-  }
+//   .logo {
+//     align-self: flex-start;
+//   }
 
-  .content {
-    width: 63.5rem;
-    height: 51rem;
-    background-color: $dark-blue;
-    justify-content: flex-end;
-    align-items: flex-start;
-    &__box {
-      @include flex-column;
-      align-items: flex-start;
-      align-content: flex-start;
-      height: 90%;
-    }
-    &__title {
-      @include title-tablet;
-      text-align: left;
-    }
-    &__paragraph {
-      @include tablet-p;
-      margin: 0;
-      text-align: left;
-      max-width: 44.5rem;
-    }
-    &__links {
-      height: 3.4rem;
-      order: 3;
-      margin-bottom: 0;
+//   .content {
+//     width: 63.5rem;
+//     height: 51rem;
+//     background-color: $dark-blue;
+//     justify-content: flex-end;
+//     align-items: flex-start;
+//     &__box {
+//       @include flex-column;
+//       align-items: flex-start;
+//       align-content: flex-start;
+//       height: 90%;
+//     }
+//     &__title {
+//       @include title-tablet;
+//       text-align: left;
+//     }
+//     &__paragraph {
+//       @include tablet-p;
+//       margin: 0;
+//       text-align: left;
+//       max-width: 44.5rem;
+//     }
+//     &__links {
+//       height: 3.4rem;
+//       order: 3;
+//       margin-bottom: 0;
 
-      &--list {
-        justify-content: flex-start;
-      }
-    }
-  }
+//       &--list {
+//         justify-content: flex-start;
+//       }
+//     }
+//   }
 
-  li + li {
-    margin-left: 3rem;
-  }
+//   li + li {
+//     margin-left: 3rem;
+//   }
 
-  .spotify {
-    width: 9.6rem;
-    height: 2.9rem;
-    opacity: 0.5;
-  }
+//   .spotify {
+//     width: 9.6rem;
+//     height: 2.9rem;
+//     opacity: 0.5;
+//   }
 
-  .apple {
-    width: 7.8rem;
-    height: 2.9rem;
-    opacity: 0.5;
-  }
+//   .apple {
+//     width: 7.8rem;
+//     height: 2.9rem;
+//     opacity: 0.5;
+//   }
 
-  .google {
-    width: 12.5rem;
-    height: 1.8rem;
-    opacity: 0.5;
-  }
+//   .google {
+//     width: 12.5rem;
+//     height: 1.8rem;
+//     opacity: 0.5;
+//   }
 
-  .pocket {
-    width: 12.9rem;
-    height: 2.6rem;
-    opacity: 0.5;
-  }
+//   .pocket {
+//     width: 12.9rem;
+//     height: 2.6rem;
+//     opacity: 0.5;
+//   }
 
-  .action {
-    display: flex;
-    align-items: flex-start;
-    width: 42.7rem;
-    height: 5.6rem;
-    // margin-top: 1rem;
-    margin-left: 0;
-    position: relative;
-    &__email {
-      @include field-lg;
-      @include mobile-cta;
-      padding-left: 3.2rem;
-      margin-top: 2rem;
-      border: none;
-      &::placeholder {
-        font-weight: 700;
-        padding-left: 3rem;
-        color: $text-white;
-        opacity: 0.7;
-      }
-    }
-    &__btn {
-      @include btn-lg;
-      @include mobile-cta;
-      font-weight: 700;
-      border: none;
-      position: absolute;
-      top: 12.4%;
-      right: 1%;
-      z-index: 2;
-      &:hover {
-        @include hover;
-      }
-    }
-  }
+//   .action {
+//     display: flex;
+//     align-items: flex-start;
+//     width: 42.7rem;
+//     height: 5.6rem;
+//     margin-left: 0;
+//     position: relative;
+//     &__email {
+//       @include field-lg;
+//       @include mobile-cta;
+//       padding-left: 3.2rem;
+//       margin-top: 2rem;
+//       border: none;
+//       &::placeholder {
+//         font-weight: 700;
+//         padding-left: 3rem;
+//         color: $text-white;
+//         opacity: 0.7;
+//       }
+//     }
+//     &__btn {
+//       @include btn-lg;
+//       @include mobile-cta;
+//       font-weight: 700;
+//       border: none;
+//       position: absolute;
+//       top: 12.4%;
+//       right: 1%;
+//       z-index: 2;
+//       &:hover {
+//         @include hover;
+//       }
+//     }
+//   }
 
-  #reply {
-    top: 110%;
-    left: 10%;
-  }
+//   #reply {
+//     top: 110%;
+//     left: 10%;
+//   }
 
-  .dots {
-    background: url("../../assets/desktop/bg-pattern-dots.svg") no-repeat center;
-    background-size: cover;
-    display: block;
-    width: 23.2rem;
-    height: 10.4rem;
-    align-self: flex-start;
-  }
-}
+//   .dots {
+//     background: url("../../assets/desktop/bg-pattern-dots.svg") no-repeat center;
+//     background-size: cover;
+//     display: block;
+//     width: 23.2rem;
+//     height: 10.4rem;
+//     align-self: flex-start;
+//   }
+// }
 
 // Large Screens
-@media screen and (min-width: 1440px) {
-  .image {
-    display: none;
-  }
+// @media screen and (min-width: 1440px) {
+//   .image {
+//     display: none;
+//   }
 
-  .logo {
-    padding-top: 1rem;
-  }
+//   .logo {
+//     padding-top: 1rem;
+//   }
 
-  .image__lg {
-    display: block;
-    background: url(../../assets/desktop/ezgif.com-gif-maker.webp) no-repeat
-      center;
-    background-size: cover;
-    width: 88.8rem;
-    height: 64rem;
-    position: absolute;
-    top: 14.5%;
-    right: 0;
-    z-index: -1;
-  }
+//   .image__lg {
+//     display: block;
+//     background: url(../../assets/desktop/ezgif.com-gif-maker.webp) no-repeat
+//       center;
+//     background-size: cover;
+//     width: 88.8rem;
+//     height: 64rem;
+//     position: absolute;
+//     top: 14.5%;
+//     right: 0;
+//     z-index: -1;
+//   }
 
-  .wrapper {
-    width: 77%;
-    height: 76%;
-    max-height: 70rem;
-    flex-wrap: wrap;
-    margin-top: 0;
-    margin-bottom: 4rem;
-    margin-right: 0;
-  }
+//   .wrapper {
+//     width: 77%;
+//     height: 76%;
+//     max-height: 70rem;
+//     flex-wrap: wrap;
+//     margin-top: 0;
+//     margin-bottom: 4rem;
+//     margin-right: 0;
+//   }
 
-  .content {
-    width: 72.3rem;
-    &__title {
-      @include title-desktop;
-    }
-    &__links {
-      height: 3rem;
-      margin-bottom: 0;
-      &--list {
-        justify-content: flex-start;
-      }
-    }
-  }
+//   .content {
+//     width: 72.3rem;
+//     &__title {
+//       @include title-desktop;
+//     }
+//     &__links {
+//       height: 3rem;
+//       margin-bottom: 0;
+//       &--list {
+//         justify-content: flex-start;
+//       }
+//     }
+//   }
 
-  .dots {
-    position: absolute;
-    right: 0;
-    bottom: 9%;
-  }
+//   .dots {
+//     position: absolute;
+//     right: 0;
+//     bottom: 9%;
+//   }
 
-  li + li {
-    margin-left: 4rem;
-  }
-}
+//   li + li {
+//     margin-left: 4rem;
+//   }
+// }

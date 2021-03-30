@@ -1,5 +1,3 @@
-@import "variable";
-
 @mixin font {
   font-weight: 300;
   color: $green;
@@ -104,4 +102,22 @@
   position: absolute;
   top: -22%;
   left: 20%;
+}
+
+// Media queries
+// 0 - 400px    small, is where normal style is applied
+// 400 - 768px  medium
+// 768 - 1440px large
+// 1em = 16px
+@mixin breakpoint($breakpoint) {
+  @if $breakpoint == medium {
+    @media only screen and (min-width: 48em) {
+      @content;
+    } // 768px
+  }
+  @if $breakpoint == large {
+    @media only screen and (min-width: 90em) {
+      @content;
+    } // 1440px
+  }
 }
