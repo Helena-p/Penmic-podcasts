@@ -362,7 +362,6 @@ li + li {
   }
   .action__email-moz-::placeholder, .action__email::placeholder {
     font-size: 0.7rem;
-    line-height: 1.5rem;
     padding-left: 1.7rem;
     opacity: 0.7;
   }
