@@ -152,6 +152,7 @@
   }
   .content__links {
     height: 1.7rem;
+    margin-top: 1rem;
     margin-bottom: 0;
   }
   .content__links-list {
@@ -267,6 +268,11 @@ li + li {
     height: 3rem;
     margin: 0 auto 2rem 0;
     position: relative;
+  }
+}
+@media only screen and (min-width: 90em) {
+  .action {
+    margin: 0 auto 3rem 0;
   }
 }
 .action__form {

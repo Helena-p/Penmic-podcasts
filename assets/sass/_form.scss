@@ -16,6 +16,10 @@
     position: relative;
   }
 
+  @include breakpoint(large) {
+    margin: 0 auto 3rem 0;
+  }
+
   &__form {
     position: relative;
   }
