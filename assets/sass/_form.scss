@@ -17,7 +17,7 @@
   }
 
   @include breakpoint(large) {
-    margin: 1rem auto 3.2rem 0;
+    margin: 1rem auto 3.3rem 0;
   }
 
   &__form {
@@ -27,6 +27,7 @@
   &__email {
     @include mobile-cta;
     @include field-sm;
+    &-moz-::placeholder,
     &::placeholder {
       font-weight: 700;
       padding-left: 3.2rem;
@@ -39,6 +40,7 @@
       @include mobile-cta;
       margin-top: 1rem;
       border: none;
+      &-moz-::placeholder,
       &::placeholder {
         font-size: 0.7rem;
         line-height: 1.5rem;
