@@ -90,9 +90,10 @@
   max-width: 50rem;
 
   @include breakpoint(medium) {
+    background-color: $dark-blue;
     width: 35.2rem;
-    height: 29rem;
-    justify-content: center;
+    min-height: 29rem;
+    justify-content: flex-end;
     align-items: flex-start;
   }
 
@@ -102,9 +103,8 @@
     align-content: space-between;
 
     @include breakpoint(medium) {
-      background-color: $dark-blue;
       width: 100%;
-      height: 28.3rem;
+      height: 25rem;
     }
   }
 
@@ -165,85 +165,5 @@ li + li {
 
   @include breakpoint(medium) {
     margin-left: 1.7rem;
-  }
-}
-
-// Input field and button
-.action {
-  @include flex-column;
-  min-height: 11rem;
-  text-align: center;
-  margin-top: 3rem;
-  margin: auto;
-  max-width: 40rem;
-  width: 100%;
-
-  @include breakpoint(medium) {
-    display: flex;
-    align-items: flex-start;
-    width: 23.7rem;
-    height: 3rem;
-    margin-left: 0;
-    position: relative;
-  }
-
-  &__form {
-    position: relative;
-  }
-
-  &__email {
-    @include mobile-cta;
-    @include field-sm;
-    &::placeholder {
-      font-weight: 700;
-      padding-left: 3.2rem;
-      color: $text-white;
-      opacity: 0.5;
-    }
-
-    @include breakpoint(medium) {
-      @include field-lg;
-      @include mobile-cta;
-      margin-top: 1rem;
-      border: none;
-      &::placeholder {
-        font-size: 0.7rem;
-        line-height: 1.5rem;
-        padding-left: 1.7rem;
-        opacity: 0.7;
-      }
-    }
-  }
-
-  &__btn {
-    @include mobile-cta;
-    @include btn-sm;
-    margin-top: 1.6rem;
-    font-weight: 700;
-    &:hover {
-      @include hover;
-    }
-
-    @include breakpoint(medium) {
-      @include btn-lg;
-      font-size: 0.7rem;
-      font-weight: 700;
-      border: none;
-      position: absolute;
-      top: -6%;
-      right: 1%;
-      z-index: 2;
-    }
-  }
-}
-
-#reply {
-  @include response;
-  font-size: 1.4rem;
-
-  @include breakpoint(medium) {
-    font-size: 0.7rem;
-    top: 110%;
-    left: 10%;
   }
 }

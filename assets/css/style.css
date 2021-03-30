@@ -94,9 +94,10 @@
 }
 @media only screen and (min-width: 48em) {
   .content {
+    background-color: #121725;
     width: 35.2rem;
-    height: 29rem;
-    justify-content: center;
+    min-height: 29rem;
+    justify-content: flex-end;
     align-items: flex-start;
   }
 }
@@ -110,9 +111,8 @@
 }
 @media only screen and (min-width: 48em) {
   .content__box {
-    background-color: #121725;
     width: 100%;
-    height: 28.3rem;
+    height: 25rem;
   }
 }
 .content__title {
@@ -190,7 +190,7 @@ li + li {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  min-height: 11rem;
+  height: 11rem;
   text-align: center;
   margin-top: 3rem;
   margin: auto;
@@ -199,11 +199,10 @@ li + li {
 }
 @media only screen and (min-width: 48em) {
   .action {
-    display: flex;
     align-items: flex-start;
     width: 23.7rem;
     height: 3rem;
-    margin-left: 0;
+    margin: 0 auto 2rem 0;
     position: relative;
   }
 }
