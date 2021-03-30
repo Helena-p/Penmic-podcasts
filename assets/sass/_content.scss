@@ -18,9 +18,7 @@
   width: 100%;
   height: 100vh;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexCenter;
 
   @include breakpoint(medium) {
     position: relative;
@@ -44,10 +42,27 @@
     right: 0;
     z-index: -1;
   }
+
+  @include breakpoint(large) {
+    display: none;
+  }
 }
 
 .image__lg {
   display: none;
+
+  @include breakpoint(large) {
+    display: block;
+    background: url(../../assets/desktop/ezgif.com-gif-maker.webp) no-repeat
+      center;
+    background-size: cover;
+    width: 49.3rem;
+    height: 35.6rem;
+    position: absolute;
+    top: 14.5%;
+    right: 0;
+    z-index: -1;
+  }
 }
 
 .dots {
@@ -61,11 +76,21 @@
     height: 5.7rem;
     align-self: flex-start;
   }
+
+  @include breakpoint(large) {
+    position: absolute;
+    right: 0;
+    bottom: 9%;
+  }
 }
 
 .logo {
   @include breakpoint(medium) {
     align-self: flex-start;
+  }
+
+  @include breakpoint(large) {
+    padding-top: 1rem;
   }
 }
 
@@ -81,6 +106,16 @@
     margin-top: 2.8rem;
     margin-right: 6%;
   }
+
+  @include breakpoint(large) {
+    width: 77%;
+    height: 76%;
+    max-height: 38.9rem;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-bottom: 2.2rem;
+    margin-right: 0;
+  }
 }
 
 .content {
@@ -95,6 +130,20 @@
     min-height: 29rem;
     justify-content: flex-end;
     align-items: flex-start;
+  }
+
+  @include breakpoint(large) {
+    width: 40.2rem;
+    &__title {
+      @include title-desktop;
+    }
+    &__links {
+      height: 1.7rem;
+      margin-bottom: 0;
+      &--list {
+        justify-content: flex-start;
+      }
+    }
   }
 
   &__box {
@@ -155,6 +204,7 @@
 
       @include breakpoint(medium) {
         justify-content: flex-start;
+        margin-top: 0;
       }
     }
   }
@@ -165,5 +215,9 @@ li + li {
 
   @include breakpoint(medium) {
     margin-left: 1.7rem;
+  }
+
+  @include breakpoint(large) {
+    margin-left: 2.2rem;
   }
 }
