@@ -216,7 +216,7 @@
   .content__title {
     font-size: 3rem;
     line-height: 3.4rem;
-    margin-top: 1.2rem;
+    margin-top: 1.4rem;
   }
 }
 .content__paragraph {
@@ -320,7 +320,7 @@ li + li {
 }
 @media only screen and (min-width: 90em) {
   .action {
-    margin: 1rem auto 3rem 0;
+    margin: 1rem auto 3.2rem 0;
   }
 }
 .action__form {
